@@ -1,0 +1,27 @@
+{
+  "name": "regulex-electron",
+  "version": "1.0.0",
+  "description": "based on regulex",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunyuu/regulex-electron.git"
+  },
+  "keywords": [
+    "regulex",
+    "electron"
+  ],
+  "author": "sunyuu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunyuu/regulex-electron/issues"
+  },
+  "homepage": "https://github.com/sunyuu/regulex-electron#readme",
+  "dependencies": {
+    "electron": "^1.7.8",
+    "regulex": "^0.0.2"
+  }
+}

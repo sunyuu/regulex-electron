@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    padding: 20px;
+}
+input {
+    outline: 0;
+}
+.reg-input h1 {
+    
+}
+.reg-input-con{
+    margin-top: 30px;
+    width: 100%;
+    border: 1px solid #999;
+    padding: 10px;
+}
+.reg-input-con span {
+    box-sizing: border-box;
+    display: inline;
+}
+.reg-input-con input {
+    display: inline;
+    width: 92%;
+    height: 30px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+}
+.reg-input-con input:focus {
+    border-color: #ff66ee;
+}
+.reg-btn {
+    margin-top: 20px;
+}
+.reg-svg {
+    padding: 4px;
+    width: 100%;
+}
+.reg-svg svg {
+    display: block;
+    margin: 0 auto;
+}
