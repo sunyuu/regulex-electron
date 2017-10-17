@@ -3,6 +3,7 @@
     padding: 0;
     font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
 body {
     padding: 20px;
@@ -11,30 +12,64 @@ input {
     outline: 0;
 }
 .reg-input h1 {
-    
+    text-align: center
 }
 .reg-input-con{
     margin-top: 30px;
-    width: 100%;
-    border: 1px solid #999;
+    width: 700px;
+    /* border: 1px solid #999; */
     padding: 10px;
 }
 .reg-input-con span {
     box-sizing: border-box;
-    display: inline;
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    font-size: 28px;
+    line-height: 34px;
+    vertical-align: middle;
 }
-.reg-input-con input {
+.reg-input-con #input {
     display: inline;
-    width: 92%;
-    height: 30px;
+    width: 400px;
+    height: 32px;
+    line-height: 34px;
     border: solid 1px transparent;
     border-radius: 5px;
+    border-color: #3db8c1;
+    vertical-align: middle;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-indent: 10px;
 }
 .reg-input-con input:focus {
-    border-color: #ff66ee;
+    border-color: #3db8c1;
+}
+.reg-mark {
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.reg-mark label {
+    display: block;
+    width: 120px;
 }
 .reg-btn {
-    margin-top: 20px;
+    display: inline-block;
+    /* margin-top: 20px; */
+    vertical-align: middle;
+    width: 60px;
+}
+.reg-btn button {
+    width: 60px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #3db8c1;
+    border-radius: 3px;
+    color: #3db8c1;
 }
 .reg-svg {
     padding: 4px;
@@ -43,4 +78,17 @@ input {
 .reg-svg svg {
     display: block;
     margin: 0 auto;
+}
+.reg-err {
+    width: 200px;
+    min-height: 80px;
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(61, 184, 193, 0.5);
+    top: 30px;
+    right: -240px;
+    transition: right 0.5s linear;
+}
+.reg-err-show {
+    right: 0
 }

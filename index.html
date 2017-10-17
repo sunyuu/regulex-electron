@@ -9,16 +9,24 @@
 </head>
 <body>
     <div class="reg-input">
-        <h1>输入框</h1>
+        <h1>正则可视化小工具</h1>
         <div class="reg-input-con">
             <span>/</span><input id="input" type="text"><span>/</span>
+            <div class="reg-mark">
+                <label for=""><input type="checkbox" id="flagI" value="i" name="flag">IgnoreCase</label>
+                <label for=""><input type="checkbox" id="flagM" value="m" name="flag">Multiline</label>
+                <label for=""><input type="checkbox" id="flagG" value="g" name="flag">GlobalMatch</label>
+            </div>
+            <div class="reg-btn">
+                <button id="btn">可视化</button>
+            </div>
         </div>
     </div>
-    <div class="reg-btn">
-        <button>可视化</button>
-    </div>
+    
     <div id="svgcon" class="reg-svg">
-        <svg></svg>
+    </div>
+    <div id="errlog" class="reg-err">
+        error message
     </div>
     <script src="raphael.js"></script>
     <script src="app.js"></script>    
